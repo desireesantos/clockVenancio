@@ -1,20 +1,17 @@
-var clock;
-		
-		$(document).ready(function() {
-			var clock;
+var clock,
+ time = new Date('2016-08-06 00:00:00 am').getTime();		
+	
+	$(document).ready(function() {
 
-			clock = $('.clock').FlipClock({
-		        clockFace: 'DailyCounter',
-		        autoStart: false,
-		        callbacks: {
-		        	stop: function() {
-		        		$('.message').html('The clock has stopped!')
-		        	}
-		        }
-		    });
-				    
-		    clock.setTime(230000);
-		    clock.setCountdown(true);
-		    clock.start();
-
-		});
+		clock = $('.clock').FlipClock(3600 * 24 * 17,{
+	        clockFace: 'DailyCounter',
+	        autoStart: false,
+	        callbacks: {
+	        	stop: function() {
+	        		$('.message').html('The clock has stopped!')
+	        	}
+	        }
+	    });
+	    clock.setCountdown(true);
+	    clock.start();
+	});						
