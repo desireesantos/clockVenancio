@@ -1,9 +1,9 @@
 var clock,
-dataTime = 3600 * 24 * 17;	
+dateTime = 3600 * 24 * 17;	
 	
 	$(document).ready(function() {
 
-		clock = $('.clock').FlipClock(dataTime,{
+		clock = $('.clock').FlipClock(dateTime,{
 	        clockFace: 'DailyCounter',
 	        autoStart: false,
 	        callbacks: {
