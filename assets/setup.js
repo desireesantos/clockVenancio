@@ -1,5 +1,4 @@
-var clock,
- time = new Date('2016-08-06 00:00:00 am').getTime();		
+var clock;	
 	
 	$(document).ready(function() {
 
